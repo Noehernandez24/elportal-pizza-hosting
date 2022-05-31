@@ -1,0 +1,143 @@
+body {
+    font-family: 'Sen', sans-serif;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.bar-container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7px;
+    
+}
+
+header {
+    background-color: aliceblue;
+    
+}
+
+
+.logo {
+    height: auto;
+    width: 250px;
+    transition: transform 1s;
+    margin: 0;
+}
+
+.logo:hover {
+    transform: scale(1.01);
+}
+
+.nav-container {
+    position: relative;
+    margin: 0;
+
+}
+
+.nav-container a {
+    padding: 10px;
+    margin: 0px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;   
+    font-family: 'Amatic SC', cursive; 
+    transition: all 0.5s;
+    background-color: greenyellow;
+    border-radius: 5px;
+}
+
+
+.facebook:hover {
+    padding: 0.9375rem;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.instagram:hover {
+    padding: 0.9375rem;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.whatsapp:hover {
+    padding: 0.9375rem;
+    background-color: white;
+    border-radius: 10%;
+}
+
+/* El slider comienza aqui */
+
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 0 0 10px #fff,
+                0 15px 50px;
+}
+
+.menu-categories {
+    margin: 60px 0px;
+}
+
+.col {
+    margin: 30px 0px;
+    text-align: center;
+    display: flex;    
+}
+
+
+
+.card-body {
+    background-color: aliceblue;
+}
+
+.card-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+
+@media screen and (max-width: 500px){
+    .logo {
+        height: auto;
+        width: 150px;
+        transition: transform 1s;
+        margin: 0;
+
+    }
+
+    .nav-container a {
+        padding: 5px;
+        margin: 0px 2px;
+        color: black;
+        text-decoration: none;
+        font-size: 0.7em;   
+        font-family: 'Amatic SC', cursive; 
+        transition: all 0.5s;
+        background-color: greenyellow;
+        border-radius: 4px;
+    }
+           
+
+     .facebook:hover {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.103);}
+
+     .instagram:hover {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.103);
+    }
+
+     .whatsapp:hover {
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.103);
+     }
+
+     .bar-container {
+         justify-content: space-evenly;
+     }
+
+     
+}
