@@ -187,10 +187,10 @@ header {
 
     .nav-container a {
         padding: 5px;
-        margin: 0px 10px;
+        margin: 0px 4px;
         color: rgba(0, 128, 0, 0.678); 
         text-decoration: none;
-        font-size: 16px;
+        font-size: 12px;
         font-family: 'Amatic SC', cursive;
         transition: all 0.5s;
         background-color: #fff;
