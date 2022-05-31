@@ -6,28 +6,28 @@ body {
 
 .bar-container{
     display: flex;
-    max-width: 1200px;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     padding: 7px;
-    
+
 }
 
 header {
-    background-color: aliceblue;
-    
+    background-color: rgba(0, 128, 0, 0.678);
+
 }
 
 
 .logo {
     height: auto;
-    width: 250px;
+    width: 100px;
     transition: transform 1s;
-    margin: 0;
+    margin: 0px 50px;
 }
 
 .logo:hover {
-    transform: scale(1.01);
+    transform: scale(1.05);
 }
 
 .nav-container {
@@ -39,32 +39,36 @@ header {
 .nav-container a {
     padding: 10px;
     margin: 0px 10px;
-    color: black;
+    color: rgba(0, 128, 0, 0.678);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 10px;
     text-decoration: none;
-    font-size: 1.5em;   
-    font-family: 'Amatic SC', cursive; 
+    font-size: 20px;
     transition: all 0.5s;
-    background-color: greenyellow;
+    background-color: white;
     border-radius: 5px;
+    
 }
 
 
 .facebook:hover {
-    padding: 0.9375rem;
+    padding: 15px;
     background-color: white;
-    border-radius: 10%;
+    
+
+    
 }
 
 .instagram:hover {
-    padding: 0.9375rem;
+    padding: 15px;
     background-color: white;
-    border-radius: 10%;
+    
 }
 
 .whatsapp:hover {
-    padding: 0.9375rem;
+    padding: 15px;
     background-color: white;
-    border-radius: 10%;
+    
 }
 
 /* El slider comienza aqui */
@@ -77,6 +81,8 @@ header {
                 0 15px 50px;
 }
 
+/* MENU CATEGORIES */
+
 .menu-categories {
     margin: 60px 0px;
 }
@@ -84,7 +90,7 @@ header {
 .col {
     margin: 30px 0px;
     text-align: center;
-    display: flex;    
+    display: flex;
 }
 
 
@@ -98,8 +104,79 @@ header {
     font-size: 2em;
 }
 
+/* FOOTER */
 
-@media screen and (max-width: 500px){
+.pie-pagina {
+    width: 100%;
+    background: #d1ca29;
+}
+
+.grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0 ;
+
+}
+
+.box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box figure img {
+    width: 200px;
+
+}
+
+.box h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #9e9719;
+    text-align: center;
+    transition: all 300ms ease ;
+
+}
+
+.red-social a:hover {
+    color: greenyellow;
+}
+
+.grupo-2 {
+    background-color: #918901;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
     .logo {
         height: auto;
         width: 150px;
@@ -113,13 +190,13 @@ header {
         margin: 0px 2px;
         color: black;
         text-decoration: none;
-        font-size: 0.7em;   
-        font-family: 'Amatic SC', cursive; 
+        font-size: 0.7em;
+        font-family: 'Amatic SC', cursive;
         transition: all 0.5s;
         background-color: greenyellow;
         border-radius: 4px;
     }
-           
+
 
      .facebook:hover {
     padding: 6px;
@@ -133,11 +210,19 @@ header {
      .whatsapp:hover {
     padding: 6px;
     background-color: rgba(0, 0, 0, 0.103);
-     }
+    }
 
      .bar-container {
          justify-content: space-evenly;
-     }
+    }
 
-     
+     .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0 ;
+    
+    }
+
+
 }
