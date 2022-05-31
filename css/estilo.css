@@ -43,7 +43,7 @@ header {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 10px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     transition: all 0.5s;
     background-color: white;
     border-radius: 5px;
@@ -188,12 +188,12 @@ header {
     .nav-container a {
         padding: 5px;
         margin: 0px 10px;
-        color: black;
+        color: rgba(0, 128, 0, 0.678); 
         text-decoration: none;
-        font-size: 0.7em;
+        font-size: 25px;
         font-family: 'Amatic SC', cursive;
         transition: all 0.5s;
-        background-color: greenyellow;
+        background-color: #fff;
         border-radius: 4px;
     }
 
