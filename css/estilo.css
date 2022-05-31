@@ -4,31 +4,54 @@ body {
     box-sizing: border-box;
 }
 
-.bar-container{
+.navbar-brand img {
+    width: 150px;
+
+}
+
+.nav-item {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #9e9719;
+    border-radius: 10px;
+    margin: 0px 6px;
+    transition: background-color 0.5s ;
+}
+
+.item-transicion:hover {
+    transform: scale(1.1);
+    background-color: #918901;
+}
+
+.dropdown-item {
+    font-family: 'Sen', sans-serif;
+    text-align: start;
+}
+
+
+
+
+
+/* .bar-container{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 7px;
 
 }
 
 header {
-    background-color: rgba(0, 128, 0, 0.678);
+    background-color: #422b0a;
 
 }
 
 
 .logo {
     height: auto;
-    width: 100px;
-    transition: transform 1s;
+    width: 140px;
     margin: 0px 50px;
 }
 
-.logo:hover {
-    transform: scale(1.05);
-}
 
 .nav-container {
     position: relative;
@@ -39,13 +62,13 @@ header {
 .nav-container a {
     padding: 10px;
     margin: 0px 10px;
-    color: rgba(0, 128, 0, 0.678);
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 10px;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     transition: all 0.5s;
-    background-color: white;
+    background-color: rgb(219, 223, 0);
     border-radius: 5px;
     
 }
@@ -53,7 +76,7 @@ header {
 
 .facebook:hover {
     padding: 15px;
-    background-color: white;
+    background-color: #efefef;
     
 
     
@@ -61,21 +84,21 @@ header {
 
 .instagram:hover {
     padding: 15px;
-    background-color: white;
+    background-color: #efefef;
     
 }
 
 .whatsapp:hover {
     padding: 15px;
-    background-color: white;
+    background-color: #efefef;
     
-}
+} */
 
 /* El slider comienza aqui */
 
 .container-slider{
     width: 90%;
-    max-width: 900px;
+    max-width: 990px;
     margin: 40px auto;
     box-shadow: 0 0 0 10px #fff,
                 0 15px 50px;
@@ -93,16 +116,21 @@ header {
     display: flex;
 }
 
+.col a {
+    background-color: #918901;
+    border: 1px solid #fff;
+}
 
 
 .card-body {
-    background-color: aliceblue;
+    background-color: rgb(217, 237, 255);
 }
 
 .card-title {
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
 }
+
 
 /* FOOTER */
 
@@ -176,45 +204,61 @@ header {
     font-size: 15px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 840px){
+
+    .nav-item {
+        font-family: 'Bebas Neue', cursive;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 0px 0px;
+    }
+
+    .item-transicion:hover {
+        transform: none;
+        background-color: #918901;
+    }
+
+    .bar-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .logo {
         height: auto;
         width: 60px;
         transition: transform 1s;
         margin: 0;
+        top: 10px;
 
     }
-
+    
     .nav-container a {
         padding: 5px;
         margin: 0px 4px;
-        color: rgba(0, 128, 0, 0.678); 
+        color: #fff;
         text-decoration: none;
-        font-size: 16px;
-        font-family: 'Amatic SC', cursive;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 8px;
         transition: all 0.5s;
-        background-color: #fff;
+        background-color: rgb(219, 223, 0);
         border-radius: 4px;
     }
 
 
      .facebook:hover {
     padding: 6px;
-    background-color: rgba(0, 0, 0, 0.103);}
+    }
 
      .instagram:hover {
     padding: 6px;
-    background-color: rgba(0, 0, 0, 0.103);
+    
     }
 
      .whatsapp:hover {
     padding: 6px;
-    background-color: rgba(0, 0, 0, 0.103);
+    
     }
 
-     .bar-container {
-         justify-content: space-evenly;
-    }
 
      .grupo-1 {
         width: 90%;
@@ -222,6 +266,14 @@ header {
         gap: 30px;
         padding: 35px 0 ;
     
+    }
+
+    .container-slider{
+        width: 95%;
+        max-width: 900px;
+        margin: 10px auto;
+        box-shadow: 0 0 0 0px,
+                    0 0px 0px;
     }
 
 
